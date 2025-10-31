@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Cart - OceanGate</title>
+  <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<header class="header">
+  <div class="wrap">
+    <div class="logo">
+      <img src="assets/inspiration-wolf-logo-esport-with-blue-background_586862-372.jpg" alt="logo">
+      <div style="font-weight:700">OceanGate</div>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <div class="brand-dropdown">
+        <a href="products.html">Products ▾</a>
+          <div class="brand-menu">
+            <a href="products.html?brand=samsung"><img src="./assets/logo samsung.png" style="width:80px;height:28px" /></a>
+            <a href="products.html?brand=intel"><img src="./assets/intel logo.png" style="width:80px;height:28px" /></a>
+            <a href="products.html?brand=amd"><img src="./assets/amd logo.png" style="width:80px;height:28px" /></a>
+            <a href="products.html?brand=sony"><img src="./assets/sony logo.png" style="width:80px;height:28px" /></a>
+            <a href="products.html?brand=lg"><img src="./assets/LG LOGO.png" style="width:80px;height:28px" /></a>
+          </div>
+      </div>
+      <a href="support.html">Support</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:8px">
+      <div style="background:white;color:var(--blue-1);padding:6px 10px;border-radius:8px;font-weight:700">Search</div>
+      <a href="cart.html" style="color:white;text-decoration:none;font-weight:700">Cart (<span id="cart-count">0</span>)</a>
+    </div>
+  </div>
+</header>
+
+<main class="section">
+  <h1>Your Cart</h1>
+  <div id="cart-list" style="margin-top:12px"></div>
+  <div style="margin-top:16px;text-align:right"><button class="btn" onclick="alert('Demo checkout - integrate payment gateway')">Proceed to Checkout</button></div>
+</main>
+
+   <footer>
+        <div class="container-1">
+            <div class="footer-content-1">
+                <div class="footer-column-1">
+                    <h3>OceanGate Limited</h3>
+                   <p style="color: white;">Quality storage products. Fast delivery. Excellent after-sales support.</p>
+                </div>
+                <div class="footer-column-1">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="#">All Products</a></li>
+                        <li><a href="#">CDs & DVDs</a></li>
+                        <li><a href="#">Optical Drives</a></li>
+                        <li><a href="#">SSD Solutions</a></li>
+                        <li><a href="#">External Storage</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column-1">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Service Centers</a></li>
+                        <li><a href="#">Warranty Information</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact Support</a></li>
+                        <li><a href="#">Downloads</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column-1">
+                    <h3>Follow Us</h3>
+                    <div class="social-media-link">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-1">
+                <p>&copy; 2023 OceanGate Limited. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+<script>window.addEventListener('load',()=>{renderCart(); updateCartCount();});</script>
+<script src="script.js"></script></body></html>
